@@ -45,7 +45,7 @@ body { background-color:#000000; color:$textColor; }
   li { padding:0; margin-top:5px; }
   }
 
-.well .main-content { background-color:#ffffff; }
+.well.main-content { background-color:#ffffff; padding: 20px 40px; }
 
 .content960 { max-width:960px; }
 
@@ -92,11 +92,13 @@ body { background-color:#000000; color:$textColor; }
 
 footer {
   padding:20px;
+  color: #ffffff;
 
   ul { margin-top:10px; }
-  a { color:$textColor; }
+  a { color:#ffffff; }
   a:hover { color:$linkHoverColor; }
   }
+footer { background-color:#2D535E; border-top:1px solid #7DACBA; }
 
 .btn-login {
   padding:8px 19px;
@@ -129,8 +131,6 @@ footer {
   @include background-image(radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 53%));
   position:relative; bottom:40px;
   }
-
-footer { background-color:#548d9c; border-top:1px solid #7DACBA; }
 
 .btn-golden {
   background-color: hsl(50, 62%, 44%) !important;
