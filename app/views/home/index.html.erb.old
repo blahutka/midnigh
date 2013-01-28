@@ -1,0 +1,30 @@
+<div class="row-fluid">
+  <div class="page-header clearfix">
+    <div class="span10 logo">
+      <h1>Language
+        <small>|Tools</small>
+      </h1>
+    </div>
+
+    <div class="span2"><a href="#" class="btn btn-primary">Login</a></div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="well clearfix video">
+    <div class="span6">
+      <div class="thumbnail">
+        <%= image_tag 'video_placeholder.jpg' %>
+      </div>
+    </div>
+    <div class="span6 intro">
+      <h2>Learning Languages</h2>
+      <h3>Just Got a Whole Lot Easier!</h3>
+      <a href="#" class="btn btn-primary btn-lead">Start Learning <strong>Now!</strong></a>
+    </div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class=" span12 transparent-rounded"></div>
+</div>
