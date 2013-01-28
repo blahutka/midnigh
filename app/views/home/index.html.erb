@@ -1,0 +1,86 @@
+<div class="row-fluid">
+  <div class="page-header clearfix">
+    <div class="span9 logo">
+      <h1>Midnajt
+        <small>|Expres</small>
+      </h1>
+    </div>
+
+  </div>
+</div>
+
+<div class="row-fluid video-content">
+  <div class="well clearfix video">
+    <div class="span6">
+      <div class="thumbnail">
+        <%= image_tag 'plakat2.jpg' %>
+      </div>
+      <div class="btns-contact">
+        <div class="span6">
+          <a href="#" class="btn btn-red btn-lead"> <i class="icon-phone"></i> <strong>Tel: 603 775 427</strong></a>
+        </div>
+        <a href="mailto:info@midnajtexpres.cz" class="btn"><i class="icon icon-envelope"></i> midnajti@centrum.cz</a>
+      </div>
+    </div>
+    <div class="span6 intro">
+      <h3>Živá hudba pro vaši zábavu</h3>
+
+      <h4>Ukázky hudby z našich vystoupení</h4>
+      <%= render :partial => "play_list" %>
+
+    </div>
+  </div>
+</div>
+<style type="text/css">
+    .main-content { background-color:white; padding:20px; }
+</style>
+
+<div class="row-fluid">
+  <!--<div class="transparent-rounded "></div>-->
+  <div class="well clearfix main-content">
+
+    <h3>Hudební duo MIDNAJT EXPRES
+      <small>(Midnajti)</small>
+    </h3>
+
+    <p>Hudební duo MIDNIGHT EXPRESS Vám zaručí příjemný večer s živou hudbou, zpěvem, tancem, vtipem i romantikou pøi
+      každé příležitosti oslav, veselí či GALA večera. <br>Jsme profesionální hudebníci s dlouholetou praxí
+      doma i v zahraničí. Repertoár je sestaven ze skladeb a písní všech hudebních směrů, stále aktualizován a nechybí
+      ani kompletní repertoáry zemí, kde
+      <strong>asto vystupují: Česká republika, Německo, Rakousko, Švýcarsko, Španělsko a
+        Kanárské ostrovy</strong>. <br><br>I když jsou členové této skupiny ,,pouze" dva, jejich silný zpěvový projev v
+      doprovodu hudby
+      vlastní aranže a sóly na saxofon pro Vás bude jistě nezapomenutelný zážitek. Sami můžete posoudit jejich výkony v
+      DEMO snímku zde v nabídce, kde je uložen průřez jejich domácí i zahraniční tvorbou. Těšíme se na s Vámi prožitý
+      večer, který může být jeden z těch příjemnějších. Na brzkou shledanou ,,MIDNIGHT EXPRESS".</p>
+    <hr>
+    <h3>Foto/Video</h3>
+
+    <div class="row-fluid">
+      <ul class="thumbnails">
+        <% 4.times do |i| %>
+            <li class="span3">
+              <img src="http://placehold.it/250x150" alt="" class="thumbnail">
+            </li>
+        <% end %>
+
+      </ul>
+      <ul class="thumbnails">
+        <% 2.times do |i| %>
+            <li class="span6">
+              <img src="http://placehold.it/450x400" alt="" class="thumbnail">
+            </li>
+        <% end %>
+
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+
+  </div>
+</div>

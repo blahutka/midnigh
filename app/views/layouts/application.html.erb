@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='utf-8'>
+  <title><%= content_for?(:title) ? yield(:title) : "MidnajtExpres.cz" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "živá hudba" %>">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= yield(:head) %>
+</head>
+<body class="video-index">
+<header class="navbar navbar-fixed-top">
+  <nav class="navbar-inner">
+    <div class="container content960">
+      <ul class="inline pull-right">
+        <li><a href="#" class="btn btn-mini btn-primary"><i class="famfamfam-flag-cz"></i> Česky</a></li>
+        <li><a href="#" class="btn btn-mini btn-primary"><i class="famfamfam-flag-gb"></i> English</a></li>
+        <li><a href="#" class="btn btn-mini btn-primary"><i class="famfamfam-flag-de"></i> Deutch</a></li>
+
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="container content960">
+  <%= yield %>
+</div>
+<!--! end of #main -->
+<footer>
+  <div class="container content960">
+
+    <div class="row-fluid">
+      <div class="span2 logo">
+        <h5>Midnajt
+          <small>|Expres</small>
+        </h5>
+      </div>
+      <div class="span10">
+        <ul class="inline">
+          <li>2012 MidnajtExpres.cz</li>
+          <li><a href="#">Kontakt</a>&nbsp;&nbsp;|</li>
+          <li><a href="#"> Terms of Service</a>&nbsp;&nbsp;|</li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

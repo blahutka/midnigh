@@ -1,0 +1,38 @@
+<%
+   playlist = [
+           {:name => 'I Will always Love You', :url => 'http://www.midnajti.wz.cz/audiocz/track1.mp3'},
+           {:name => 'Bájecná ženská', :url => 'http://www.midnajti.wz.cz/audiocz/track2.mp3'},
+           {:name => 'Rybitví', :url => 'http://www.midnajti.wz.cz/audiocz/track7.mp3'},
+           {:name => 'Dej mi víc své lásky', :url => 'http://www.midnajti.wz.cz/audiocz/track8.mp3'},
+           {:name => 'Tos mi nosil plnou náruè aster', :url => 'http://www.midnajti.wz.cz/audiocz/track9.mp3'},
+           {:name => 'Let\'s Twist again', :url => 'http://www.midnajti.wz.cz/audiocz/track18.mp3'},
+           {:name => 'My heart Will go On', :url => 'http://www.midnajti.wz.cz/audiocz/track20.mp3'},
+           {:name => 'Yo Te Quiero Medley', :url => 'http://www.midnajti.wz.cz/audiocz/track22.mp3'},
+           {:name => 'Jive Connie Jive Medley', :url => 'http://www.midnajti.wz.cz/audiocz/track23.mp3'},
+           {:name => 'Rote Lippen Medley', :url => 'http://www.midnajti.wz.cz/audiocz/track24.mp3'},
+           {:name => 'True Love', :url => 'http://www.midnajti.wz.cz/audiocz/track26.mp3'},
+           {:name => 'Believe', :url => 'http://www.midnajti.wz.cz/audiocz/track31.mp3'},
+           {:name => 'My heart Will go On', :url => 'http://www.midnajti.wz.cz/audiocz/track34.mp3'},
+           {:name => 'Somethin\' Stupid', :url => 'http://www.midnajti.wz.cz/audiocz/track36.mp3'},
+           {:name => 'Greatest Love of All', :url => 'http://www.midnajti.wz.cz/audiocz/track38.mp3'},
+           {:name => 'Strangers In The Night', :url => 'http://www.midnajti.wz.cz/audiocz/track39.mp3'},
+   ]
+%>
+<div class="row-fluid">
+  <% playlist.in_groups(2).each do |group| %>
+      <ul class="unstyled span6">
+        <% group.each do |song| %>
+            <li class="">
+              <i class="pull-left icon-play-circle"></i>
+
+              <div class="">
+                <a href="<%= song[:url] %>" target="_blank">
+                  <span class="media-heading"><%= song[:name] %> </span>
+                </a>            <br>
+                <small class="muted">Originál: Jméno Interpreta</small>
+              </div>
+            </li>
+        <% end %>
+      </ul>
+  <% end %>
+</div>
