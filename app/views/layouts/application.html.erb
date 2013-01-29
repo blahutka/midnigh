@@ -6,6 +6,7 @@
   <title><%= content_for?(:title) ? yield(:title) : "MidnajtExpres.cz" %></title>
   <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "živá hudba" %>">
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe&text=MidnajtExpres' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <%= yield(:head) %>
