@@ -3,16 +3,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset='utf-8'>
-  <title><%= content_for?(:title) ? yield(:title) : "MidnajtExpres.cz" %></title>
-  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "živá hudba" %>">
+  <title><%= content_for?(:title) ? yield(:title) : "MidnajtExpres.cz - Midnajti" %></title>
+  <meta name="description" content="Rádi zahrajeme na Vaší rodinné i veřejné AKCI, svatbě, plese, zábavě,
+  prostě všude tam, kde nesmí chybět živá hudba, tanec a dobrá nálada.">
+  <meta name="keywords" content="živá hudba, hudba na svatbě, rodinné akci, hudba na plese">
   <%= stylesheet_link_tag "application", :media => "all" %>
-  <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe&text=MidnajtExpres' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe&text=MidnightExpress' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <%= yield(:head) %>
 </head>
 <body class="video-index">
-<header class="navbar navbar-fixed-top">
+<header class="navbar" id="home">
   <nav class="navbar-inner">
     <div class="container content960">
       <ul class="inline pull-right">
@@ -33,16 +35,15 @@
 
     <div class="row-fluid">
       <div class="span2 logo">
-        <h5>Midnajt
-          <small>|Expres</small>
+        <h5>Midnight
+          <small>|Express</small>
         </h5>
       </div>
       <div class="span10">
         <ul class="inline">
-          <li>2012 MidnajtExpres.cz</li>
-          <li><a href="#">Kontakt</a>&nbsp;&nbsp;|</li>
-          <li><a href="#"> Terms of Service</a>&nbsp;&nbsp;|</li>
-          <li><a href="#">Privacy</a></li>
+          <li><a href="#home" class="local">2012 MidnightExpress.cz</a></li>
+          <li class="horizontal-divider">&nbsp;</li>
+          <li><a href="#contact" class="local">Kontakty</a></li>
         </ul>
       </div>
     </div>

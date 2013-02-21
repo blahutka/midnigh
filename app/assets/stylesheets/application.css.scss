@@ -38,7 +38,7 @@ body { background-color:#000000; color:$textColor; }
   h1, h2, h3 { color:$headerColor; }
   }
 
-.navbar-inner { background-color:#08313b; background-image:none; min-height:40px; }
+.navbar-inner { background-color:#08313b; background-image:none; min-height:40px; border-width: 0 0 1px; border-radius:0; }
 
 .navbar ul {
   margin:0;
@@ -57,14 +57,18 @@ body { background-color:#000000; color:$textColor; }
 
 .logo {
   text-transform:uppercase; color:white; text-shadow:1px 2px #333333;
-  h1 { font-size:34px; }
-  h1 small, h6 small, h5 small { font-size:inherit; color:$goldenColor; }
-  }
+  font-size:34px;
+  small { font-size:inherit;
+    //color:$goldenColor;
+    color:#FF1F2E;
+    }
+ }
+.logo-sub {font-size:14px;color:#F81634; margin:-10px 0 0;line-height:14px;}
 
-.font-mrDafoe {
+h1.font-mrDafoe {
   font-family:'Mr Dafoe', cursive;
   text-transform:none;
-  h1 { font-size:60px; font-weight:normal;}
+  font-size:60px; font-weight:normal;
   }
 
 .video {
@@ -83,6 +87,7 @@ body { background-color:#000000; color:$textColor; }
 
   .btns-contact {
     margin-top:20px;
+    padding-left:20px;
     }
   .btn-red { margin:6px 0; }
 
@@ -154,3 +159,11 @@ footer { background-color:#2D535E; border-top:1px solid #7DACBA; }
   text-shadow:0 1px 1px rgba(255, 255, 255, 0.66);
   -webkit-font-smoothing:antialiased;
   }
+
+.red {color:#6F2A2F;}
+
+.videos.thumbnails > li {margin-left: 8px;}
+.images.thumbnails > li {margin-left: 8px; width:200px;}
+
+.text-left {text-align:left;}
+.text-right {text-align:right;}
